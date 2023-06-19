@@ -1,0 +1,10 @@
+.footer {
+    margin-top: 3.5rem;
+    background-color: #D44C5C;
+    text-align: center;
+}
+
+.footer img {
+    margin-top: 1rem;
+    max-width: 100%;
+}
