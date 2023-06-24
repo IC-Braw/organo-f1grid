@@ -1,75 +1,18 @@
-# Getting Started with Create React App
+<h1 align=center> <p>#Organo-f1grid</p>
+  <img src=https://github.com/IC-Braw/organo-f1grid/assets/119905716/aa2d1ddf-0cb6-44f9-9b48-e0e4059ef28a#vitrinedev alt=Print do organograma width=90%></h1>
+<h2>React: desenvolvendo com JavaScript</h2>
+<p>Este projeto foi realizado no curso "React: desenvolvendo com JavaScript" da Alura.</p>
+<p>O projeto representa a porta de entrada do aluno para o mundo do React.js. No curso, o aluno é introduzido ao desenvolvimento de um projeto criando componentes funcionais.</p>
+<p>Entre os principais conteúdos, a principal preocupação já foi o uso de props e sua relação com funções puras e também o trabalho com os states.</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p>O design do projeto foi disponibilizado no Figma, e os alunos tinham como desafio personalizar o projeto adicionando algo que é presente em nossas vidas. Por isso, este organograma tem como tema o grid da Fórmula 1. Na ideia original, o ideal é adicionar pilotos e chefes de cada equipe do grid da temporada atual. Além disso, se o usuário desejar, também podem ser adicionados os carros principais da temporada e liveries comemorativas que a equipe venha a usar.</p>
 
-## Available Scripts
+<h2><video align=center width="60%" height="30%" controls="controls" autoplay="autoplay" src="https://github.com/IC-Braw/organo-f1grid/assets/119905716/fca28d1d-fa67-4d1c-aafa-f1bdf250e576" type="video/mp4"></h2>
 
-In the project directory, you can run:
+<h3>Tecnologias utilizadas</h3>
+<img src=https://cdn-icons-png.flaticon.com/512/1183/1183672.png alt= Logotipo do React.js width=20%>
 
-### `npm start`
+<h3>Desenvolvedor</h3>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# organo-f1grid
-# organo-f1grid
-# organo-f1grid
-# organo-f1grid
-# organo-f1grid
+| <img src="https://avatars.githubusercontent.com/u/119905716?v=4" alt="Foto de perfil do desenvolvedor Israel Cabral" width=180vw><br><sub>[Israel Cabral](https://github.com/IC-Braw)</sub>
+| :--:
