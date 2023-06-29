@@ -4,19 +4,7 @@ import CampoTexto from "../CampoTexto";
 import ListaSuspensa from "../ListaSuspensa";
 import './Formulario.css';
 
-const Formulario = (props) => {
-    const times = [
-        'Red Bull Racing',
-        'Mercedes',
-        'Ferrari',
-        'Alpine',
-        'Aston Martin',
-        'AlphaTauri',
-        'McLaren',
-        'Haas F1 Team',
-        'Alfa Romeo',
-        'Williams'
-    ]
+const Formulario = ({aoCadastrar, times}) => {
 
     const [nome, setNome] = useState ('')
     const [cargo, setCargo] = useState ('')
@@ -25,16 +13,12 @@ const Formulario = (props) => {
 
     const aoSalvar = (evento) => {
         evento.preventDefault()
-        props.aoColaboradorCadastrado ({
+        aoCadastrar ({
             nome,
             cargo,
             imagem,
             time
         })
-        setNome ('')
-        setCargo ('')
-        setImagem ('')
-        setTime ('')
         console.log(nome, cargo, imagem, time)
     }
     
