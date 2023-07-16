@@ -1,9 +1,9 @@
-import { CiCircleRemove } from "react-icons/ci";
+import { BiMinusCircle } from "react-icons/bi";
 import './Colaborador.css';
 
 const Colaborador = ({colaborador, corDeFundo, aoDeletar}) => {
     return (<div className='colaborador'>
-        <CiCircleRemove size={30} className='deletar' onClick={aoDeletar}/>
+        <BiMinusCircle size={30} className='deletar' onClick={aoDeletar}/>
         <div className='cabecalho' style={{backgroundColor:corDeFundo}}>
             <img src={colaborador.imagem} alt={colaborador.nome}/>
         </div>
