@@ -255,6 +255,10 @@ function App() {
   ]
 
   const [colaboradores, setColaboradores] = useState(inicial)
+
+  function deletarColaborador () {
+    console.log ("deletando colaborador")
+  }
   
   return (
     <div className='App'>
@@ -266,6 +270,7 @@ function App() {
       key={indice} 
       time={time}
       colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
+      aoDeletar = {deletarColaborador}
       />)}
       </section>
       <Rodape></Rodape>
