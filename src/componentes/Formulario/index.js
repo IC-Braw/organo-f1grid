@@ -11,7 +11,8 @@ const Formulario = ({aoCadastrar, times, cadastrarTime}) => {
     const [imagem, setImagem] = useState ('')
     const [time, setTime] = useState ('')
     const [nomeTime, setNomeTime] = useState ('')
-    const [corTime, setCorTime] = useState ('')
+    const [corTime1, setCorTime1] = useState ('')
+    const [corTime2, setCorTime2] = useState ('')
 
     const aoSalvar = (evento) => {
         evento.preventDefault()
@@ -58,7 +59,7 @@ const Formulario = ({aoCadastrar, times, cadastrarTime}) => {
                 </Botao>
             </form>
             <form className="formulario" onSubmit={(evento) => {evento.preventDefault() 
-                cadastrarTime({nome: nomeTime, cor: corTime})}}>
+                cadastrarTime({nome: nomeTime, corPrimaria: corTime1, corSecundaria:corTime2})}}>
                 <h2>Preencha os dados para criar um novo time</h2>
                 <Campo 
                 obrigatorio 
@@ -70,10 +71,18 @@ const Formulario = ({aoCadastrar, times, cadastrarTime}) => {
                 <Campo 
                 obrigatorio 
                 type="color"
-                label="Cor" 
+                label="Cor do Card" 
                 placeholder="Digite a cor do time"
-                valor = {corTime}
-                aoAlterado = {valor=>setCorTime(valor)}
+                valor = {corTime1}
+                aoAlterado = {valor=>setCorTime1(valor)}
+                />
+                <Campo 
+                obrigatorio 
+                type="color"
+                label="Cor de Fundo" 
+                placeholder="Digite a cor do time"
+                valor = {corTime2}
+                aoAlterado = {valor=>setCorTime2(valor)}
                 />
                 <Botao>
                     Criar um novo time

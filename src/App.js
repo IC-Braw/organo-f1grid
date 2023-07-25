@@ -303,9 +303,16 @@ function App() {
     setColaboradores(colaboradores.filter(colaborador => colaborador.id !== id));
   }
 
-  function mudarCorDoTime (cor, id) {
+  function mudarCorPrimariaDoTime (corPrincipal, id) {
     setTimes(times.map(time => {
-      if(time.id === id) {time.corSecundaria = cor;}
+      if(time.id === id) {time.corPrimaria = corPrincipal;}
+      return time;
+    }
+    ));
+  }
+  function mudarCorDeFundoDoTime (corDeFundo, id) {
+    setTimes(times.map(time => {
+      if(time.id === id) {time.corSecundaria = corDeFundo;}
       return time;
     }
     ));
@@ -334,7 +341,8 @@ function resolverFavorito(id) {
         <h1>Equipes 2023:</h1>
       {times.map((time, indice) => <Time
         aoFavoritar={resolverFavorito}
-        mudarCor = {mudarCorDoTime} 
+        mudarCor1 = {mudarCorPrimariaDoTime}
+        mudarCor2={mudarCorDeFundoDoTime} 
         key={indice} 
         time={time}
         colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
