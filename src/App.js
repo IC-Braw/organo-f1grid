@@ -299,8 +299,8 @@ function App() {
 
   const [colaboradores, setColaboradores] = useState(inicial)
 
-  function deletarColaborador () {
-    console.log ("deletando colaborador")
+  function deletarColaborador (id) {
+    setColaboradores(colaboradores.filter(colaborador => colaborador.id !== id));
   }
 
   function mudarCorDoTime (cor, id) {
@@ -318,11 +318,11 @@ function App() {
       <section className='times'>
         <h1>Equipes 2023:</h1>
       {times.map((time, indice) => <Time
-      mudarCor = {mudarCorDoTime} 
-      key={indice} 
-      time={time}
-      colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
-      aoDeletar = {deletarColaborador}
+        mudarCor = {mudarCorDoTime} 
+        key={indice} 
+        time={time}
+        colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
+        aoDeletar = {deletarColaborador}
       />)}
       </section>
       <Rodape></Rodape>
