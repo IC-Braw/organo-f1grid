@@ -68,10 +68,11 @@ const Formulario = ({aoCadastrar, times, cadastrarTime}) => {
                 valor = {nomeTime}
                 aoAlterado = {valor=>setNomeTime(valor)} 
                 />
+                <div className="formulario form-color">
                 <Campo 
                 obrigatorio 
                 type="color"
-                label="Cor do Card" 
+                label="Cor para os Cards" 
                 placeholder="Digite a cor do time"
                 valor = {corTime1}
                 aoAlterado = {valor=>setCorTime1(valor)}
@@ -84,6 +85,7 @@ const Formulario = ({aoCadastrar, times, cadastrarTime}) => {
                 valor = {corTime2}
                 aoAlterado = {valor=>setCorTime2(valor)}
                 />
+                </div>
                 <Botao>
                     Criar um novo time
                 </Botao>
