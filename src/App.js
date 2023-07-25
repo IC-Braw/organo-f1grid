@@ -311,13 +311,29 @@ function App() {
     ));
   }
   
+function cadastrarTime(novoTime) {
+  setTimes([...times, {...novoTime, id: uuidv4()}])
+}
+
+function resolverFavorito(id) {
+  setColaboradores (colaboradores.map(colaborador => {
+    if(colaborador.id===id) colaborador.favorito = !colaborador.favorito;
+    return colaborador
+  }))
+}
+
   return (
     <div className='App'>
       <Banner />
-      <Formulario times={times.map(time => time.nome)} aoCadastrar={colaborador => setColaboradores([...colaboradores, colaborador])} />
+      <Formulario 
+        cadastrarTime = {cadastrarTime}
+        times={times.map(time => time.nome)} 
+        aoCadastrar={colaborador => setColaboradores([...colaboradores, colaborador])} 
+      />
       <section className='times'>
         <h1>Equipes 2023:</h1>
       {times.map((time, indice) => <Time
+        aoFavoritar={resolverFavorito}
         mudarCor = {mudarCorDoTime} 
         key={indice} 
         time={time}
