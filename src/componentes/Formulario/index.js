@@ -59,7 +59,7 @@ const Formulario = ({aoCadastrar, times, cadastrarTime}) => {
                 <Botao texto='Criar Card'/>
             </form>
             <form className="formulario" onSubmit={(evento) => {evento.preventDefault() 
-                cadastrarTime({nome: nomeTime, corPrimaria: corTime1, corSecundaria:corTime2, id:uuidv4()})}}>
+                cadastrarTime({nome: nomeTime, corPrincipal: corTime1, corDeFundo:corTime2, id:uuidv4()})}}>
                 <h2>Preencha os dados para criar um novo time</h2>
                 <Campo 
                 obrigatorio 

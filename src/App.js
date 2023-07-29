@@ -350,8 +350,8 @@ function App() {
     ));
   }
   
-  function cadastrarTime({ nome, corDeFundo, corPrincipal }) {
-    setTimes([...times, { nome, corDeFundo, corPrincipal, id: uuidv4() }])
+  function cadastrarTime(novoTime) {
+    setTimes([...times, {...novoTime, id: uuidv4()}])
   }
 
 function resolverFavorito(id) {
