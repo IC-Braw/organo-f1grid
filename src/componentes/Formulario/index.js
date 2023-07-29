@@ -3,6 +3,7 @@ import Botao from "../Botao";
 import Campo from "../Campo";
 import ListaSuspensa from "../ListaSuspensa";
 import './Formulario.css';
+import { v4 as uuidv4 } from 'uuid';
 
 const Formulario = ({aoCadastrar, times, cadastrarTime}) => {
 
@@ -17,6 +18,7 @@ const Formulario = ({aoCadastrar, times, cadastrarTime}) => {
     const aoSalvar = (evento) => {
         evento.preventDefault()
         aoCadastrar ({
+            id:uuidv4(),
             nome,
             cargo,
             imagem,
@@ -54,16 +56,14 @@ const Formulario = ({aoCadastrar, times, cadastrarTime}) => {
                 itens={times} 
                 valor={time} 
                 aoAlterado={valor=>setTime(valor)} />
-                <Botao>
-                    Criar Card
-                </Botao>
+                <Botao texto='Criar Card'/>
             </form>
             <form className="formulario" onSubmit={(evento) => {evento.preventDefault() 
-                cadastrarTime({nome: nomeTime, corPrimaria: corTime1, corSecundaria:corTime2})}}>
+                cadastrarTime({nome: nomeTime, corPrimaria: corTime1, corSecundaria:corTime2, id:uuidv4()})}}>
                 <h2>Preencha os dados para criar um novo time</h2>
                 <Campo 
                 obrigatorio 
-                label="Nome" p
+                label="Nome"
                 placeholder="Digite o nome do time"
                 valor = {nomeTime}
                 aoAlterado = {valor=>setNomeTime(valor)} 
@@ -86,9 +86,7 @@ const Formulario = ({aoCadastrar, times, cadastrarTime}) => {
                 aoAlterado = {valor=>setCorTime2(valor)}
                 />
                 </div>
-                <Botao>
-                    Criar um novo time
-                </Botao>
+                <Botao texto='Criar um novo time' />
             </form>
         </section>
     )
