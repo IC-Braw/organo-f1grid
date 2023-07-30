@@ -16,7 +16,7 @@ const Time = ({time, colaboradores, aoDeletar, mudarCor1, mudarCor2, aoFavoritar
                 <Colaborador 
                 key={indice} 
                 colaborador={colaborador} 
-                corDeFundo={time.corPrimaria}
+                corPrimaria={time.corPrimaria}
                 corSecundaria={time.corSecundaria} 
                 aoDeletar={aoDeletar}
                 aoFavoritar={aoFavoritar}

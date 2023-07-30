@@ -335,16 +335,16 @@ function App() {
     setColaboradores(colaboradores.filter(colaborador => colaborador.id !== id));
   }
 
-  function mudarCorPrimariaDoTime (corPrincipal, id) {
+  function mudarCorPrimariaDoTime (corPrimaria, id) {
     setTimes(times.map(time => {
-      if(time.id === id) {time.corPrimaria = corPrincipal;}
+      if(time.id === id) {time.corPrimaria = corPrimaria;}
       return time;
     }
     ));
   }
-  function mudarCorDeFundoDoTime (corDeFundo, id) {
+  function mudarCorDeFundoDoTime (corSecundaria, id) {
     setTimes(times.map(time => {
-      if(time.id === id) {time.corSecundaria = corDeFundo;}
+      if(time.id === id) {time.corSecundaria = corSecundaria;}
       return time;
     }
     ));

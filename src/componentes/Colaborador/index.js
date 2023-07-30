@@ -2,7 +2,7 @@ import { BiMinusCircle } from "react-icons/bi";
 import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import './Colaborador.css';
 
-const Colaborador = ({colaborador, corDeFundo, aoDeletar, aoFavoritar}) => {
+const Colaborador = ({colaborador, corPrimaria, aoDeletar, aoFavoritar}) => {
 
     function favoritar() {
         aoFavoritar (colaborador.id);
@@ -18,7 +18,7 @@ const Colaborador = ({colaborador, corDeFundo, aoDeletar, aoFavoritar}) => {
             size={30}
             className='deletar' 
             onClick={() => aoDeletar(colaborador.id)}/>
-        <div className='cabecalho' style={{backgroundColor:corDeFundo}}>
+        <div className='cabecalho' style={{backgroundColor:corPrimaria}}>
             <img src={colaborador.imagem} alt={colaborador.nome}/>
         </div>
         <div className='rodape'>
